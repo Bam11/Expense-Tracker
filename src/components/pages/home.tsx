@@ -49,7 +49,7 @@ export default function Home() {
 
         <div className="max-w-300 z-50 mx-auto flex justify-between items-center text-white px-10 py-8 sm:px-4 lg:px-10 xl:px-6 md:px-12">
           <div className="w-full grid md:grid-cols-2 gap-8 lg:gap-6 xl:gap-12 ">
-            <div className="space-y-6 grid place-items-center">
+            <div className="space-y-10">
               <h1
                 className="text-white font-bold text-3xl lg:text-[48px] md:text-[44px] leading-[110%]"
               >
