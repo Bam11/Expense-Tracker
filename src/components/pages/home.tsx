@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import Feature from '../feature'
 import HowItWorks from '../how-it-works'
 import Nav from '../nav'
+import SpendingBarChart from '../spendingBarChart'
 
 const transactions = [
   {
@@ -75,7 +76,7 @@ export default function Home() {
                       <h2 className="text-3xl font-bold">
                         $6.2k
                       </h2>
-                      <div className="flex items-end gap-3">
+                      {/* <div className="flex items-end gap-3">
                         <div className="bg-white/20 py-4 px-2 rounded-2xl" />
                         <div className="bg-white/20 py-3.5 px-2 rounded-2xl" />
                         <div className="bg-white/20 py-6 px-2 rounded-2xl" />
@@ -93,7 +94,8 @@ export default function Home() {
                         <div className="bg-white/20 py-9 px-2 rounded-2xl hidden xl:flex" />
                         <div className="bg-white/20 py-6 px-2 rounded-2xl hidden xl:flex" />
                         <div className="bg-white/20 py-12 px-2 rounded-2xl hidden xl:flex" />
-                      </div>
+                      </div> */}
+                      <SpendingBarChart />
                     </div>
                   </div>
                   <div className="flex flex-col gap-2.5">

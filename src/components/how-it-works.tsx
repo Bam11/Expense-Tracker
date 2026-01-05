@@ -28,7 +28,7 @@ export default function HowItWorks() {
         <h2 className="text-4xl font-bold ">
           How It Works
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 px-12 gap-15 w-full">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-15 w-full">
           {works.map((e, index) => {
             const Icon = e.icon;
 
