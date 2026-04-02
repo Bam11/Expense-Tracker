@@ -1,5 +1,50 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-brand-primary: #6B46FF;
+  --color-brand-primary-accent: #8B5CF6;
+  --color-brand-secondary: #3B82F6;
+  --color-brand-dark: #0A0A0A;
+  --color-brand-light: #f8f6f6;
+  --background-image-gradient-primary: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+  --color-primary: #6B46FF;
+  --color-background-light: #f8f6f6;
+  --color-background-dark: #0A0A0A;
+  --color-surface-dark: #141414;
+  --color-border-dark: #1F1F1F;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.float-animation {
+  animation: float 4s ease-in-out infinite;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+html.dark .glass-effect {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: var(--color-brand-light);
+  color: #0f172a;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark body {
+  background-color: var(--color-brand-dark);
+  color: #ffffff;
 }
