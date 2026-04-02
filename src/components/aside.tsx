@@ -61,12 +61,12 @@ export default function Aside() {
     //   </div>
     // </aside>
     <aside className="hidden md:flex w-64 border-r border-slate-200 dark:border-[#1F1F1F] flex-col bg-white dark:bg-[#0A0A0A] z-10 shrink-0">
-      <div className="p-6 flex items-center gap-3">
+      <Link to="/" className="p-6 flex items-center gap-3">
         <div className="size-10 bg-[#6B46FF] rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-[#6B46FF]/20">
           S
         </div>
         <span className="text-xl font-bold tracking-tight">SnapBill</span>
-      </div>
+      </Link>
       <nav className="flex-1 px-4 py-4 space-y-1">
         <Link className="flex items-center gap-3 px-4 py-3 rounded-xl bg-[#6B46FF]/15 text-[#6B46FF] border-r-2 border-[#6B46FF] transition-all" to="/dashboard">
           <span className="material-symbols-outlined">
