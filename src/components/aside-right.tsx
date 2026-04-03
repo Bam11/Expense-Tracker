@@ -1,4 +1,3 @@
-import React from 'react'
 import { RefreshCcw, Link2, Sparkle } from 'lucide-react'
 
 export default function AsideRight() {
