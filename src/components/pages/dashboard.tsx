@@ -5,6 +5,7 @@ import {
 } from "lucide-react";
 import AsideLeft from "../aside-left";
 import AsideRight from "../aside-right";
+import { Link } from "react-router-dom";
 
 export default function Dashboard() {
   const [isDark, setIsDark] = useState(true);
@@ -36,12 +37,13 @@ export default function Dashboard() {
                   <h1 className="text-xl font-bold">Good morning, Alex</h1>
                   <p className="text-xs text-slate-500 dark:text-slate-400">Here's what's happening with your expenses today.</p>
                 </div>
-                <div className="flex md:hidden items-center gap-3">
+                <Link to="/"
+                  className="flex md:hidden items-center gap-3">
                   <div className="size-10 bg-[#6B46FF] rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-[#6B46FF]/20">
                     S
                   </div>
                   <span className="text-xl font-bold tracking-tight">SnapBill</span>
-                </div>
+                </Link>
               </div>
 
               {/* Header Right Actions */}
