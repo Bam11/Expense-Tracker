@@ -17,7 +17,7 @@ import {
 //   onClose: () => void;
 // }
 
-export default function Aside() {
+export default function AsideLeft() {
   // const [active, setActive] = useState(0);
   return (
     // <aside
